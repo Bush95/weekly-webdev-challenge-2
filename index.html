@@ -10,103 +10,104 @@
     <link rel="stylesheet" href="css/animate.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#nav-collapsed" data-offset="100">
+    <nav id="menu" class="navbar-default" data-spy="affix" data-offset-top="40">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapsed" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#header-section" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div id="nav-collapsed" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header-section">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <section id="header-section">
-        <nav id="menu" class="navbar-fluid navbar-default container">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="#header-section" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#header-section">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <div class="container page-header">
-            <div class="jumbotron-fluid wow fadeIn">
-
-                <h1>Fresh Life</h1>
-                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                <button type="button" class="btn btn-danger btn-lg wow bounceIn">GET FREE NOW</button>
-            </div>
+            <h1>Fresh Life</h1>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <button type="button" class="btn wow bounceIn">GET FREE NOW</button>
         </div>
         <a href="#about" id="header-scroll-button"></a>
     </section>
 
     <section id="about">
         <div class="container-fluid">
-            <div class="flex-row">
-                <div class="flex-item">
-                    <img class="about-img wow slideInUp" src="images/about.png" alt="about-img" class="about-img">
+            <div class="row">
+                <div class="col-sm-6 col-sm-push-6 wow slideInUp">
+                    <div class="about-header">
+                        <h2>About Us</h2>
+                        <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            <br>
+                            <br> Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                        </p>
+                    </div>
                 </div>
-                <div class="flex-item wow slideInUp">
-                    <h2 class="font-color-white">About Us</h2>
-                    <p class="font-color-white">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-                        <br>
-                        <br> Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                <div class="col-sm-6 col-sm-pull-6 text-right">
+                    <img class="about-img wow slideInUp" src="images/about.png" alt="about-img">
                 </div>
             </div>
         </div>
     </section>
+
     <section id="services">
         <div class="container-fluid">
-            <div class="flex-row">
-                <div class="offers-btn-block">
-                    <div class="offer-block wow rollIn">
+            <div class="row">
+                <div class="col-sm-6 col-sm-push-6 services-img wow rollIn">
+                    <h2>Our Services</h2>
+                </div>
+                <div class="col-sm-6 col-sm-pull-6 offers-btn-block">
+                    <a href="" class="offer-block wow rollIn">
                         <div class="offer-label">Online Shopping</div>
                         <div class="offer-ico ico-shopping"></div>
-                    </div>
-                    <div class="offer-block wow rollIn">
+                    </a>
+                    <a href="" class="offer-block wow rollIn">
                         <div class="offer-label">Quality Product</div>
                         <div class="offer-ico ico-quality"></div>
-                    </div>
-                    <div class="offer-block wow rollIn">
+                    </a>
+                    <a href="" class="offer-block wow rollIn">
                         <div class="offer-label">Domestic &amp; International Delivery</div>
                         <div class="offer-ico ico-delivery"></div>
-                    </div>
-                    <div class="offer-block wow rollIn">
+                    </a>
+                    <a href="" class="offer-block wow rollIn">
                         <div class="offer-label">Well Organized</div>
                         <div class="offer-ico ico-organisation"></div>
-                    </div>
-                </div>
-                <div class="services-img wow rollIn">
-                    <h2 class="font-color-white">Our Services</h2>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="gallery">
-        <div class="container gallery-description wow bounceIn">
+        <div class="container gallery-header wow fadeInUp">
             <h2>Gallery</h2>
             <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor is nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-xs-8 wow flipInX">
+                <div class="col-xs-8 wow fadeInUp">
                     <img src="images/gallery-img-1.jpg" alt="gallery-image-1">
                 </div>
                 <div class="col-xs-4">
 
-                    <div class="col-xs-12 wow flipInX no-padding">
+                    <div class="col-xs-12 wow fadeInUp no-padding">
                         <img src="images/gallery-img-2.jpg" alt="gallery-image-2">
 
                     </div>
 
-                    <div class="col-xs-12 wow flipInX no-padding">
+                    <div class="col-xs-12 wow fadeInUp no-padding">
                         <img src="images/gallery-img-3.jpg" alt="gallery-image-3">
                     </div>
 
@@ -115,29 +116,31 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-xs-6 wow flipInX">
+                <div class="col-xs-6 wow fadeInUp">
                     <img src="images/gallery-img-4.jpg" alt="gallery-image-4">
                 </div>
-                <div class="col-xs-6 wow flipInX">
+                <div class="col-xs-6 wow fadeInUp">
                     <img src="images/gallery-img-5.jpg" alt="gallery-image-5">
                 </div>
             </div>
         </div>
-        <button type="button" class="btn btn-primary btn-lg wow bounceIn">View more</button>
+        <button type="button" class="btn wow bounceIn">View more</button>
     </section>
 
     <section id="subscribe">
         <div class="container">
 
             <div class="jumbotron-fluid wow slideInLeft">
-                <h3 class="subscribe-header">Subscribe To Us</h3>
+                <h3 class="subscribe-header">
+                    Subscribe To Us
+                </h3>
                 <p class="subscribe-paragraph">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <div class="row">
                     <div class="col-sm-6">
                         <input class="subscribe-email-input" id="subscribe-input" type="text" placeholder="Your email address...">
                     </div>
                     <div class="col-sm-6">
-                        <button type="button" class="btn btn-success btn-md wow bounceIn" data-wow-delay='1s'>Subscribe</button>
+                        <button type="button" class="btn wow bounceIn" data-wow-delay='600ms'>Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -145,16 +148,16 @@
     </section>
 
     <section id="blog">
-        <div class="container">
-            <h2 class="blog-header font-color-white wow slideInUp">Blog</h2>
-            <p class="blog-paragraph font-color-white wow zoomIn">
+        <div class="container blog-header">
+            <h2 class="wow slideInUp">Blog</h2>
+            <p class="wow zoomIn">
                 Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
             </p>
         </div>
         <div class="container">
-            <div class="row font-color-white">
+            <div class="row">
                 <div class="col-sm-4">
-                    <div class="blog-post wow flipInY">
+                    <div class="blog-post wow fadeInUp">
                         <img class="blog-post-img" src="images/blog/post_thumbnail-1.jpg" alt="post_thumbnail-1">
                         <div class="blog-post-date">
                             <p class="date-day">20</p>
@@ -167,7 +170,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="blog-post wow flipInY">
+                    <div class="blog-post wow fadeInUp">
                         <img class="blog-post-img" src="images/blog/post_thumbnail-2.jpg" alt="post_thumbnail-2">
                         <div class="blog-post-date">
                             <p class="date-day">20</p>
@@ -180,7 +183,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="blog-post wow flipInY">
+                    <div class="blog-post wow fadeInUp">
                         <img class="blog-post-img" src="images/blog/post_thumbnail-3.jpg" alt="post_thumbnail-3">
                         <div class="blog-post-date">
                             <p class="date-day">20</p>
@@ -195,13 +198,13 @@
             </div>
         </div>
         <div class="text-center">
-            <button type="button" class="btn btn-warning btn-lg wow bounceIn">View more</button>
+            <button type="button" class="btn wow bounceIn">View more</button>
         </div>
     </section>
     <section id="contact">
-        <div class="container">
-            <h2 class="contact-header wow bounceIn">Contact</h2>
-            <p class="contact-paragraph wowBounceIn">For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
+        <div class="container contact-header wow fadeInUp">
+            <h2>Contact</h2>
+            <p>For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
         </div>
         <div class="container">
             <div class="row">
@@ -211,6 +214,7 @@
                         <input type="text" placeholder="Your email">
                         <input type="text" placeholder="Your phone number.">
                         <textarea form="form-contact" placeholder="Your message."></textarea>
+                        <!-- No submit button in PSD. -->
                     </form>
                 </div>
                 <div class="col-sm-6 wow slideInUp">
@@ -235,7 +239,7 @@
                 <div class="col-sm-5 col-sm-pull-5">
                     <p class="footer-copy">&copy; 2015 Company. All right reserved.</p>
                 </div>
-                <div class="col-sm-2 col-sm-pull-5" text-center>
+                <div class="col-sm-2 col-sm-pull-5">
                     <a href="#header-section">
                         <img class="footer-logo" src="images/footer-logo.png" alt="footer-logo">
                     </a>
