@@ -1,6 +1,3 @@
-new WOW().init();
-
-
 $('a').click(function () {
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - $(".navbar-header").height()
