@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <title>WebDev Challenge #2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:700,500,300,800' rel='stylesheet' type='text/css'>
+<!--    <link href='https://fonts.googleapis.com/css?family=Raleway:700,500,300,800' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
 
-<body data-spy="scroll" data-target="#nav-collapsed" data-offset="100">
+<body data-spy="scroll" data-target="#nav-collapsed" data-offset="200">
     <nav id="menu" class="navbar-default" data-spy="affix" data-offset-top="40">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapsed" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapsed">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -24,12 +24,18 @@
             </div>
             <div id="nav-collapsed" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#header-section">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="visible-xs"><a href="#header-section" data-toggle="collapse">Home</a></li>
+                    <li class="hidden-xs"><a href="#header-section" data-toggle="collapse" data-target="#nav-collapsed">Home</a></li>
+                    <li class="visible-xs"><a href="#about" data-toggle="collapse" data-target="#nav-collapsed">About</a></li>
+                    <li class="hidden-xs"><a href="#about">About</a></li>
+                    <li class="visible-xs"><a href="#services" data-toggle="collapse" data-target="#nav-collapsed">Services</a></li>
+                    <li class="hidden-xs"><a href="#services">Services</a></li>
+                    <li class="visible-xs"><a href="#gallery" data-toggle="collapse" data-target="#nav-collapsed">Gallery</a></li>
+                    <li class="hidden-xs"><a href="#gallery">Gallery</a></li>
+                    <li class="visible-xs"><a href="#blog" data-toggle="collapse" data-target="#nav-collapsed">Blog</a></li>
+                    <li class="hidden-xs"><a href="#blog">Blog</a></li>
+                    <li class="visible-xs"><a href="#contact" data-toggle="collapse" data-target="#nav-collapsed">Contact</a></li>
+                    <li class="hidden-xs"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>

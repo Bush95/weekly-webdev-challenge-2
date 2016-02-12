@@ -28,6 +28,7 @@ body{
     right: 0;
     top: 0;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    background: #fff !important;
 }
 .navbar-default{
     position: absolute;
@@ -37,9 +38,15 @@ body{
     z-index: 10;
     padding-top: 50px;
     background: #fff;
-    transition: box-shadow 500ms;
+    transition: box-shadow 500ms, background 80ms;
     .navbar-nav{
         margin-top: 6px; 
+    }
+    @media @sm{
+        background: transparent;
+        .active a{
+            box-shadow: inset 0px 3px 0px #ff6033;
+        }
     }
     .navbar-nav>li>a{
         font: 700 16px / 25px 'Raleway', sans-serif;
@@ -57,11 +64,6 @@ body{
     }
     .navbar-header{
         padding-bottom: 8px;
-    }
-    @media @sm{
-        .active a{
-            box-shadow: inset 0px 3px 0px #ff6033;
-        }
     }
     .navbar-nav>.active>a,
     .navbar-nav>.active>a:focus,
@@ -131,34 +133,34 @@ section{
 }
 #header-section{
     min-height:100vh;
-    height: 100vh;
-    position: relative;
     background: url(../images/bg_header.jpg) top center/cover no-repeat #fff;
-    .btn{
+    .btn{ 
         background-color: #ff6033;
         margin-top: 30px;
         margin-bottom: 80px;
     }
     h1{
-        margin-top: 150px;
         font-size: 46px; 
         line-height: 25px;
-        margin-bottom: 34px;
+        margin: 0 0 34px 0;
         @media @md{
             font-size: 60px;
         }
     }
     .page-header{
+        padding-top: 180px;
         border: none;
+        margin-top: 0;
+        margin-bottom: 0; 
         background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 28%, rgba(255,255,255,1) 82%, rgba(255,255,255,0.05) 98%, rgba(255,255,255,0.05) 100%);
         background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 28%,rgba(255,255,255,1) 82%,rgba(255,255,255,0.05) 98%,rgba(255,255,255,0.05) 100%);
         background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 28%,rgba(255,255,255,1) 82%,rgba(255,255,255,0.05) 98%,rgba(255,255,255,0.05) 100%);
         filter: progid:DXIageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#0dffffff',GradientType=0 );
         @media @sm{
             padding-left: 30px;
-            background: none;
+            padding-top: 300px;
+            background: transparent; 
             text-align: left;
-            margin-top: 120px;
             p{
                 width: 368px;
             }
