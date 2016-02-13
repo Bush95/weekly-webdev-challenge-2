@@ -1,4 +1,4 @@
-$('#nav-collapsed a, #header-scroll-button').click(function (e) {
+$('#nav-collapsed a, .navbar-brand, #header-scroll-button').click(function (e) {
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - $(".navbar-header").height()

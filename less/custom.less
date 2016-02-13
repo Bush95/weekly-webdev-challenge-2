@@ -142,7 +142,7 @@ section{
     }
     h1{
         font-size: 46px; 
-        line-height: 25px;
+        line-height: 46px;
         margin: 0 0 34px 0;
         @media @md{
             font-size: 60px;
@@ -191,6 +191,7 @@ section{
     color: #fff;
     padding-bottom:35px;
     .about-img{
+        margin-top: 30px;
         width: 100%;
         max-width: 566px;
     }
@@ -221,7 +222,7 @@ section{
     .offer-block { 
         width: auto;
         display: block;
-        font: 700 20px / 27px 'Raleway', sans-serif;
+        font: 700 16px / 24px 'Raleway', sans-serif;
         position: relative;
         margin: 0 auto 20px auto;
         background-color: #ffffff;
@@ -231,15 +232,21 @@ section{
         box-shadow: 0px 2px 5px 0.00px rgba(0, 0, 0, 0.5);
         color: #262626;
         text-decoration: none;
+        @media @sm{
+            font: 700 20px / 27px 'Raleway', sans-serif;
+        }
         &::after{
             content: ' ';
             display: block;
             position: absolute;
-            right: 100px;
+            right: 80px;
             top: 0px;
             background: #9d9d9d;
             width: 1px;
             height: 100%;
+            @media @sm{
+                right: 100px;
+            }
         }
         &:hover{
             .offer-ico{
@@ -256,17 +263,23 @@ section{
             -o-transform: translateY(-50%);
             width: 100%;
             padding-left: 10px;
-            padding-right: 110px;
+            padding-right: 80px;
+            @media @sm{
+                padding-right: 110px;
+            }
         }
         .offer-ico{
             position: absolute;
             top: 0;
             right: 0;
-            width: 99px;
+            width: 79px;
             height: 100px;
             background-position: center center;
             background-repeat: no-repeat;
             transition: transform 600ms;
+            @media @sm{
+                width: 99px;
+            }
         }
         .ico-shopping {
             background-image: url(../images/shopping-icon.png)
@@ -283,11 +296,15 @@ section{
     }
     .services-img {
         background: url(../images/bg_services.png) top center/contain no-repeat;
-        height: 400px;
+        height: 300px;
         margin-bottom: 60px;
         color: #fff;
+        @media @sm{
+            height: 400px;
+        }
         h2 {
             padding-top: 170px;
+            font-size: 54px;
         }
     }
     @media @sm{
@@ -306,6 +323,7 @@ section{
 }
 #gallery{
     background-color: #ffe92f;
+    padding-bottom: 60px;
     img{
         max-width:100%;
         max-height: 100%;
@@ -314,17 +332,13 @@ section{
     }
     .btn{
         background-color: #5585a2;
-        margin: 50px 0 120px 0;
+        margin-top: 50px;
     }
     [class^="col"]:not(.no-padding){ 
         padding: 0 10px;
     }
     .row{
     margin-top: 15px;
-    }
-    .blur{
-    -webkit-filter: blur(8px);
-    filter: blur(8px); 
     }
     .no-padding{
     padding: 0;
@@ -340,11 +354,12 @@ section{
 }
 
 #subscribe {
-    background: url(../images/bg_subscribe.jpg) center 60px no-repeat #fff;
+    background: url(../images/bg_subscribe.jpg) center top no-repeat #fff;
     background-size: 500px auto;
     min-height: 500px;
+    padding-bottom: 60px; 
     .subscribe-header{
-        margin-top: 420px;
+        margin-top: 360px;
         margin-bottom: 34px;
         font: 700 38px / 38px 'Raleway', sans-serif;
     }
@@ -361,7 +376,7 @@ section{
         text-align: center;
     }
     .btn{
-        margin: 30px 0;
+        margin-top: 30px;
         background-color: #96b92c;
         width: 170px;
     }
@@ -395,6 +410,7 @@ section{
 #blog{
     background-color: #b07cf7;
     color: #fff;
+    padding-bottom: 60px;
     .blog-header{
         margin-bottom: 20px;
         @media @sm{
@@ -419,8 +435,8 @@ section{
     }
     .blog-post-date{
         position: absolute;
-        left: 30px;
-        top: 30px;
+        left: 8%;
+        top: 8%;
         width: 60px;
         height: 60px;
         border-radius: 5px;
@@ -464,13 +480,13 @@ section{
     }
     .btn{
         background-color: #f72b3b;
-        margin: 50px 0 120px 0;
+        margin-top: 50px;
     }
 }
 
 #contact{
     background: url(../images/bg_contact.jpg) /cover;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     .contact-header{
         margin-bottom: 20px;
     }
@@ -530,7 +546,6 @@ footer{
     }
     .footer-bar div{
         text-align: center;
-        height: 30px;
         line-height: 30px;
     }
     .footer-logo{
